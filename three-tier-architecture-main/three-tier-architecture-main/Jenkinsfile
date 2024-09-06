@@ -12,14 +12,14 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Deploy Three-Tier-Application') {
+        stage('Deploy Three-Tier-Applicatio-dev') {
             steps {
                 script {
                     def workspace = pwd()  // Get the current workspace directory
                     echo "Current workspace: ${workspace}"
 
                     // Change to the directory where Terraform configuration files are located
-                    dir("${workspace}/three-tier-architecture/three-tier-architecture-main/three-tier-architecture-main/envs/dev") {
+                    dir("${workspace}/three-tier-architecture-main/three-tier-architecture-main/envs/dev") {
                         // Check for changes in .tf files
                         // def changes = sh(script: 'git diff --name-only origin/master...HEAD | grep \\.tf$', returnStatus: true)
                         
