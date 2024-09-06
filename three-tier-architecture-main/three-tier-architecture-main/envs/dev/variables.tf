@@ -11,7 +11,7 @@ variable "environment" {
 #EC2 Module Variables
 variable "image_id" {
   type    = string
-  default = "ami-06cf15d6d096df5d2"
+  default = "ami-04cb4ca688797756f"
 }
 
 variable "instance_type" {
@@ -52,7 +52,7 @@ variable "identifier" {
 
 variable "instance_class" {
   type    = string
-  default = "db.t2.micro"
+  default = "db.t3.micro"
 }
 
 variable "multi_az" {
