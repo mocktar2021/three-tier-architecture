@@ -31,7 +31,7 @@ module "vpc" {
   az_private_subnet           = var.az_private_subnet
   az_database_subnet          = var.az_database_subnet
   app_alb_lb                  = var.app_alb_lb
-  app_target_group            = var.app_target_group
+# app_target_group            = var.app_target_group
   app_autoscaling_group       = var.app_autoscaling_group
   database_subnet_group       = var.database_subnet_group
   project_name                = var.project_name
