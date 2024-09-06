@@ -1,8 +1,5 @@
 provider "aws" {
-  profile = "mocktar77"
   region = "us-east-1"
-  access_key = "AKIAQB4RKZHACQD2HRUO"
-  secret_key = "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"
 }
 
 module "ec2" {
